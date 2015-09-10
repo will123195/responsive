@@ -1,0 +1,14 @@
+{
+  "name": "responsive",
+  "version": "1.0.0",
+  "description": "Simple window size checkpoints",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test"
+  },
+  "author": "will123195",
+  "license": "MIT"
+}
