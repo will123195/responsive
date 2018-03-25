@@ -5,15 +5,15 @@ Simple window size checkpoints in the browser.
 ## Install
 
 ```
-npm install --save responsive
+npm i -S responsive
 ```
 
 ## Usage
 
 ```js
-var responsive = require('responsive')
+import responsive from 'responsive'
 
-var opts = {
+const opts = {
   checkpoints: {
     small: {
       width: [0, 400]
@@ -23,13 +23,16 @@ var opts = {
     }
   }
 }
-responsive(opts, function () {
-  console.log('The window size is:')
-  console.log(this.matches) // ['big']
-  console.log(this.width) // 1000
-  console.log(this.height) // 480
-  console.log(this.landscape) // true
-  console.log(this.portrait) // false
-  console.log(this.square) // false
+responsive(opts, data => {
+  // This callback fires immediately and whenever the window size changes
+  console.log(data)
+  // {
+  //   width: 824,
+  //   height: 977,
+  //   square: false,
+  //   portrait: true,
+  //   landscape: false,
+  //   matches: ['big']
+  // }
 })
 ```

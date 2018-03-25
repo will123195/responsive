@@ -63,6 +63,6 @@ responsive.prototype.refresh = function (opts, cb) {
       self.matches.push(name)
     }
   })
-  cb.call(this)
+  cb(self)
 
 }

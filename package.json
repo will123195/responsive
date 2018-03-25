@@ -10,5 +10,8 @@
     "test": "tape test"
   },
   "author": "will123195",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.9.0"
+  }
 }
